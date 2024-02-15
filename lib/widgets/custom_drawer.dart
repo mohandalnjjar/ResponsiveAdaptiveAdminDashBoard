@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/drawer_otem_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
-import 'package:responsive_dash_board/widgets/drawerItem.dart';
+import 'package:responsive_dash_board/widgets/drawer_list_view.dart';
+import 'package:responsive_dash_board/widgets/inactive&active_drawert_item.dart';
 import 'package:responsive_dash_board/widgets/user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -13,48 +14,45 @@ class CustomDrawer extends StatelessWidget {
       decoration: const BoxDecoration(
         color: Colors.white,
       ),
-      child: const Column(
-        children: [
-          UserInfolistTile(
-            title: 'HnoOd ALnjjar',
-            subTitle: 'demo@gmail.com',
-            image: Assets.imagesAvatar,
+      child: const CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: UserInfolistTile(
+              title: 'HnoOd ALnjjar',
+              subTitle: 'demo@gmail.com',
+              image: Assets.imagesAvatar,
+            ),
           ),
-          SizedBox(
-            height: 8,
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 8,
+            ),
           ),
           DraweritemsListView(),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    height: 20,
+                  ),
+                ),
+                InActiveDrawerItem(
+                  listTileData: DrawerItmeModel(
+                      title: 'Settings', image: Assets.imagesSetting),
+                ),
+                InActiveDrawerItem(
+                  listTileData: DrawerItmeModel(
+                      title: 'Logout account', image: Assets.imagesLogout),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+              ],
+            ),
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class DraweritemsListView extends StatelessWidget {
-  const DraweritemsListView({
-    super.key,
-  });
-
-  static const List<DrawerItmeModel> items = [
-    DrawerItmeModel(title: 'My Transaction', image: Assets.imagesConvertCard),
-    DrawerItmeModel(title: 'Statistics', image: Assets.imagesGraph),
-    DrawerItmeModel(title: 'Dashboard', image: Assets.imagesCategory),
-    DrawerItmeModel(title: 'My Investments', image: Assets.imagesChart2),
-    DrawerItmeModel(title: 'Wallet Account', image: Assets.imagesWallet),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: items.length,
-      itemBuilder: (context, index) => Padding(
-        padding: const EdgeInsets.only(
-          top: 20,
-        ),
-        child: DrawerItem(
-          listTileData: items[index],
-        ),
       ),
     );
   }
