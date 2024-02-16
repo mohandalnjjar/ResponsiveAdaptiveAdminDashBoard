@@ -9,6 +9,10 @@ class Assets {
   /// assets/images/card-receive.svg
   static const String imagesCardReceive = "assets/images/card-receive.svg";
 
+  /// Assets for imagesCardSend
+  /// assets/images/cardSend.svg
+  static const String imagesCardSend = "assets/images/cardSend.svg";
+
   /// Assets for imagesCategory
   /// assets/images/category.svg
   static const String imagesCategory = "assets/images/category.svg";
@@ -28,6 +32,10 @@ class Assets {
   /// Assets for imagesLogout
   /// assets/images/logout.svg
   static const String imagesLogout = "assets/images/logout.svg";
+
+  /// Assets for imagesMoneys
+  /// assets/images/moneys.svg
+  static const String imagesMoneys = "assets/images/moneys.svg";
 
   /// Assets for imagesSetting
   /// assets/images/setting.svg

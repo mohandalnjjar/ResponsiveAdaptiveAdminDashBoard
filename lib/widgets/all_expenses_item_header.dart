@@ -9,6 +9,7 @@ class AllExpensesItemHeader extends StatelessWidget {
     return Row(
       children: [
         Container(
+          padding: const EdgeInsets.all(14),
           height: 60,
           width: 60,
           decoration: const ShapeDecoration(
@@ -16,6 +17,10 @@ class AllExpensesItemHeader extends StatelessWidget {
             shape: OvalBorder(),
           ),
           child: SvgPicture.asset(iamge),
+        ),
+        const Spacer(),
+        const Icon(
+          Icons.arrow_forward_ios_outlined,
         )
       ],
     );

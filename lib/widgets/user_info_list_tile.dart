@@ -22,7 +22,7 @@ class UserInfolistTile extends StatelessWidget {
         ),
         subtitle: Text(
           subTitle,
-          style: AppStyles.StyleReular12,
+          style: AppStyles.styleReular12,
         ),
       ),
     );

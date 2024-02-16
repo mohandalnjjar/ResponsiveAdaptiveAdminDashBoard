@@ -39,7 +39,7 @@ abstract class AppStyles {
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle StyleReular12 = TextStyle(
+  static const TextStyle styleReular12 = TextStyle(
     fontSize: 12,
     color: Color(0xFFAAAAAA),
     fontFamily: 'Montserrat',
@@ -49,7 +49,7 @@ abstract class AppStyles {
     fontSize: 24,
     color: Color(0xFF4EB7F2),
     fontFamily: 'Montserrat',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
   );
   static const TextStyle StyleSemiBold18 = TextStyle(
     fontSize: 24,
