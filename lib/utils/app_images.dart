@@ -5,6 +5,10 @@ class Assets {
   /// assets/images/avatar.svg
   static const String imagesAvatar = "assets/images/avatar.svg";
 
+  /// Assets for imagesCardReceive
+  /// assets/images/card-receive.svg
+  static const String imagesCardReceive = "assets/images/card-receive.svg";
+
   /// Assets for imagesCategory
   /// assets/images/category.svg
   static const String imagesCategory = "assets/images/category.svg";

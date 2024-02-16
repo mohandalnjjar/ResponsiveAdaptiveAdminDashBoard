@@ -13,10 +13,10 @@ class DashBoardDeskTopLayout extends StatelessWidget {
           child: CustomDrawer(),
         ),
         SizedBox(
-          width: 32,
+          width: 10,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: Column(
             children: [
               Expanded(
