@@ -20,11 +20,11 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
   );
 
-  static const TextStyle StyleMedium16 = TextStyle(
+  static const TextStyle styleMedium16 = TextStyle(
     fontSize: 16,
     color: Color(0xFF064060),
     fontFamily: 'Montserrat',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
   );
 
   static const TextStyle styleSemiBold16 = TextStyle(

@@ -96,7 +96,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.StyleMedium16.copyWith(color: Colors.white),
+            style: AppStyles.styleMedium16.copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,

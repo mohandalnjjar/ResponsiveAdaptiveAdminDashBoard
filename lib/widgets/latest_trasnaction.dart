@@ -9,17 +9,16 @@ class LatestTransaction extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Expanded(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'LatestTransaction',
-            style: AppStyles.StyleMedium16,
+            style: AppStyles.styleMedium16,
           ),
           SizedBox(
             height: 16,
           ),
-          Expanded(
-            child: LatestTransactionListView(),
-          ),
+          LatestTransactionListView(),
         ],
       ),
     );

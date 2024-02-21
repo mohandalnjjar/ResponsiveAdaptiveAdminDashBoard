@@ -5,7 +5,8 @@ import 'package:responsive_dash_board/widgets/latest_transaction_list_view_model
 
 class UserInfolistTile extends StatelessWidget {
   const UserInfolistTile({
-    super.key, required this.itemData,
+    super.key,
+    required this.itemData,
   });
 
   final UserInfoModel itemData;
@@ -13,15 +14,17 @@ class UserInfolistTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: const Color(0xffFAFAFA),
-      child: ListTile(
-        leading: SvgPicture.asset(itemData.image),
-        title: Text(
-          itemData.title,
-          style: AppStyles.styleSemiBold16,
-        ),
-        subtitle: Text(
-          itemData.subTitle,
-          style: AppStyles.styleReular12,
+      child: Center(
+        child: ListTile(
+          leading: SvgPicture.asset(itemData.image),
+          title: Text(
+            itemData.title,
+            style: AppStyles.styleSemiBold16,
+          ),
+          subtitle: Text(
+            itemData.subTitle,
+            style: AppStyles.styleReular12,
+          ),
         ),
       ),
     );

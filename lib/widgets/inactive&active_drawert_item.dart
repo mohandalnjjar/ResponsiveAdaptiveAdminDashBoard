@@ -17,7 +17,7 @@ class InActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(listTileData.image),
       title: Text(
         listTileData.title,
-        style: AppStyles.StyleMedium16,
+        style: AppStyles.styleMedium16,
       ),
     );
   }
