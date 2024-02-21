@@ -29,6 +29,8 @@ class InActiveAllExpensesItem extends StatelessWidget {
         children: [
           AllExpensesItemHeader(
             iamge: itemModel.image,
+            imagebackgroundColor: Colors.white,
+            iamgeColor: const Color(0xff4EB7F2),
           ),
           const SizedBox(
             height: 34,
@@ -83,7 +85,10 @@ class ActiveAllExpensesItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
-            iamgeColor: Colors.black,
+            imagebackgroundColor: Colors.white.withOpacity(
+              0.1000000001221,
+            ),
+            iamgeColor: Colors.white,
             iamge: itemModel.image,
           ),
           const SizedBox(
@@ -91,21 +96,21 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleSemiBold16,
+            style: AppStyles.StyleMedium16.copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             itemModel.date,
-            style: AppStyles.StyleReular14,
+            style: AppStyles.StyleReular14.copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             itemModel.price,
-            style: AppStyles.StyleSemiBold24,
+            style: AppStyles.StyleSemiBold24.copyWith(color: Colors.white),
           ),
         ],
       ),

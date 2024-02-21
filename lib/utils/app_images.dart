@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAva2
+  /// assets/images/ava2.svg
+  static const String imagesAva2 = "assets/images/ava2.svg";
+
   /// Assets for imagesAvatar
   /// assets/images/avatar.svg
   static const String imagesAvatar = "assets/images/avatar.svg";

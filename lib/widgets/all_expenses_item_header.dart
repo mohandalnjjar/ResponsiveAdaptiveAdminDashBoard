@@ -5,11 +5,11 @@ class AllExpensesItemHeader extends StatelessWidget {
   const AllExpensesItemHeader({
     super.key,
     required this.iamge,
-    this.iamgeColor = const Color(0xFF4EB7FE),
-    required this.backgroundColor,
+    this.iamgeColor,
+    this.imagebackgroundColor,
   });
   final String iamge;
-  final Color iamgeColor, backgroundColor;
+  final Color? iamgeColor, imagebackgroundColor;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,17 +19,19 @@ class AllExpensesItemHeader extends StatelessWidget {
           height: 60,
           width: 60,
           decoration: ShapeDecoration(
-            color: backgroundColor,
+            color: imagebackgroundColor ?? const Color(0xffFFFFFF),
             shape: const OvalBorder(),
           ),
           child: SvgPicture.asset(
             iamge,
-            colorFilter: ColorFilter.mode(iamgeColor),
+            colorFilter:
+                ColorFilter.mode(iamgeColor ?? Colors.white, BlendMode.srcIn),
           ),
         ),
         const Spacer(),
-        const Icon(
+        Icon(
           Icons.arrow_forward_ios_outlined,
+          color: iamgeColor ?? Colors.black,
         )
       ],
     );
