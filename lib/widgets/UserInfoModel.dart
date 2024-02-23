@@ -11,13 +11,11 @@ class LatestTransactionListView extends StatelessWidget {
         subTitle: 'HnOodAlnjjar&gmial.com',
         image: Assets.imagesAva2),
     UserInfoModel(
-        title: 'Folan ElFolany',
+        title: 'Montaser Bk',
         subTitle: 'foola@gmail.com',
         image: Assets.imagesAvatar),
     UserInfoModel(
-        title: 'mahmoud',
-        subTitle: 'mahmoud&gmail.com',
-        image: Assets.imagesAva2),
+        title: 'mai', subTitle: 'mai@gmail.com', image: Assets.imagesAva2),
   ];
   @override
   Widget build(BuildContext context) {
