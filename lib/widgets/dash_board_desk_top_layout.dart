@@ -14,12 +14,14 @@ class DashBoardDeskTopLayout extends StatelessWidget {
           child: CustomDrawer(),
         ),
         SizedBox(width: 10),
-        AllExpensesAndQucikInVoiceSection(),
+        Expanded(
+          flex: 3,
+          child: AllExpensesAndQucikInVoiceSection(),
+        ),
         SizedBox(width: 24),
         Expanded(
           child: TransActionHistorySection(),
         ),
-       
       ],
     );
   }
