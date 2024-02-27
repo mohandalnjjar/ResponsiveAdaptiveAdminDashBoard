@@ -11,7 +11,7 @@ class AllExpensesHeader extends StatelessWidget {
       children: [
         Text(
           'All Expenses',
-          style: AppStyles.StyleSemiBold20,
+          style: AppStyles.styleSemiBold20,
         ),
         Expanded(
           child: SizedBox(),

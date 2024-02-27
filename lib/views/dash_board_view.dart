@@ -10,12 +10,8 @@ class DashBoardView extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffE5E5E5),
       body: AdaptiveLayout(
-        mobileLayout: (context) => const SizedBox(
-          height: 100,
-        ),
-        tabletLayout: (context) => const SizedBox(
-          height: 100,
-        ),
+        mobileLayout: (context) => const SizedBox(height: 100),
+        tabletLayout: (context) => const SizedBox(height: 100),
         deskTopLayout: (context) => const DashBoardDeskTopLayout(),
       ),
     );
