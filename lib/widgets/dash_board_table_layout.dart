@@ -12,7 +12,10 @@ class DashBoardTaletLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          child: CustomDrawer(),
+          child: Padding(
+            padding: EdgeInsets.only(top: 12),
+            child: CustomDrawer(),
+          ),
         ),
         Expanded(
           flex: 3,
@@ -21,6 +24,9 @@ class DashBoardTaletLayout extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 12,
+                  ),
                   AllExpensesAndQucikInVoiceSection(),
                   SizedBox(
                     height: 24,

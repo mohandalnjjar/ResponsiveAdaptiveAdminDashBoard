@@ -15,6 +15,9 @@ class DashBoardMobileLayout extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
+            SizedBox(
+              height: 10,
+            ),
             AllExpensesAndQucikInVoiceSection(),
             SizedBox(
               height: 24,
