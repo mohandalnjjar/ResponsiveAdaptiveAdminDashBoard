@@ -30,12 +30,12 @@ class _MycardSectionState extends State<MycardSection> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'My Card',
-            style: AppStyles.styleSemiBold20,
+            style: AppStyles.styleSemiBold20(context),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           MyCardPageView(
             pageController: pageController,

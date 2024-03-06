@@ -19,13 +19,13 @@ class TransActionItem extends StatelessWidget {
         ),
         subtitle: Text(
           transActionData.date,
-          style: AppStyles.styleSemiBold16.copyWith(
+          style: AppStyles.styleSemiBold16(context).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),
         trailing: Text(
           transActionData.amount,
-          style: AppStyles.styleSemiBold20.copyWith(
+          style: AppStyles.styleSemiBold20(context).copyWith(
             color: transActionData.isWithDrawel
                 ? const Color(0xffF3735E)
                 : const Color(0XFF7CD87A),

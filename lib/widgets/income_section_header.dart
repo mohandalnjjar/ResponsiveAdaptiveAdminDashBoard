@@ -11,9 +11,9 @@ class InComeSectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+         Text(
           'Income',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const Expanded(child: SizedBox()),
         Container(
@@ -27,16 +27,16 @@ class InComeSectionHeader extends StatelessWidget {
               ),
             ),
           ),
-          child: const Row(
+          child:  Row(
             children: [
               Text(
                 'Monthly',
-                style: AppStyles.styleMedium16,
+                style: AppStyles.styleMedium16(context),
               ),
-              SizedBox(
+             const SizedBox(
                 width: 16,
               ),
-              Icon(
+      const        Icon(
                 Icons.keyboard_arrow_down_sharp,
               )
             ],

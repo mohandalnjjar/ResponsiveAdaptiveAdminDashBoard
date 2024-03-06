@@ -12,9 +12,11 @@ class MyCard extends StatelessWidget {
       aspectRatio: 420 / 215,
       child: Container(
         margin: const EdgeInsets.only(right: 8),
-        decoration: const BoxDecoration(
-          // color: Color(0xff4EB7F2),
-          image: DecorationImage(
+        decoration: ShapeDecoration(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          image: const DecorationImage(
             fit: BoxFit.fill,
             image: AssetImage(Assets.imagesCard),
           ),
@@ -25,11 +27,13 @@ class MyCard extends StatelessWidget {
             ListTile(
               title: Text(
                 'Name card',
-                style: AppStyles.StyleRegular16.copyWith(color: Colors.white),
+                style: AppStyles.styleRegular16(context)
+                    .copyWith(color: Colors.white),
               ),
-              subtitle: const Text(
+              subtitle: Text(
                 'Mohannd Alnjjar',
-                style: AppStyles.StyleMedium20,
+                style: AppStyles.styleMedium16(context)
+                    .copyWith(color: Colors.white),
               ),
               trailing: SvgPicture.asset(Assets.imagesGallery),
             ),
@@ -37,25 +41,25 @@ class MyCard extends StatelessWidget {
               child: SizedBox(),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 10),
+              padding: const EdgeInsets.only(right: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     '0918 8124 0042 8129',
-                    style:
-                        AppStyles.StyleSemiBold24.copyWith(color: Colors.white),
+                    style: AppStyles.styleSemiBold16(context)
+                        .copyWith(color: Colors.white),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 4,
                   ),
                   Text(
                     ' 12/20 - 124',
-                    style:
-                        AppStyles.StyleRegular16.copyWith(color: Colors.white),
+                    style: AppStyles.styleRegular16(context)
+                        .copyWith(color: Colors.white),
                   ),
                   const SizedBox(
-                    height: 27,
+                    height: 10,
                   ),
                 ],
               ),

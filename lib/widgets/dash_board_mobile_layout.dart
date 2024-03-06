@@ -12,7 +12,7 @@ class DashBoardMobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15),
+        padding: EdgeInsets.symmetric(horizontal: 2),
         child: Column(
           children: [
             SizedBox(
@@ -20,11 +20,11 @@ class DashBoardMobileLayout extends StatelessWidget {
             ),
             AllExpensesAndQucikInVoiceSection(),
             SizedBox(
-              height: 24,
+              height: 12,
             ),
             MycardSection(),
             SizedBox(
-              height: 24,
+              height: 12,
             ),
             IncomeSection(),
             SizedBox(

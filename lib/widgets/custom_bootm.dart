@@ -11,7 +11,6 @@ class CustomButtom extends StatelessWidget {
     return SizedBox(
       height: 62,
       child: ElevatedButton(
-        
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -22,7 +21,7 @@ class CustomButtom extends StatelessWidget {
         onPressed: () {},
         child: Text(
           hint,
-          style: AppStyles.styleSemiBold18.copyWith(color: textColor),
+          style: AppStyles.styleSemiBold18(context).copyWith(color: textColor),
         ),
       ),
     );

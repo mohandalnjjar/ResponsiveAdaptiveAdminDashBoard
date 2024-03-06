@@ -15,7 +15,7 @@ class TransActionHistory extends StatelessWidget {
           MycardSection(),
           SizedBox(height: 20),
           Divider(
-            height: 40,
+            height: 15,
             color: Color(0xffF1F1F1),
           ),
           TransActionHeader(),

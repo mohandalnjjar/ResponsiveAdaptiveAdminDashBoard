@@ -11,7 +11,7 @@ class CustomTextFilde extends StatelessWidget {
         fillColor: const Color(0xffFAFAFA),
         filled: true,
         hintText: hint,
-        helperStyle: AppStyles.StyleRegular16,
+        helperStyle: AppStyles.styleRegular16(context),
         border: buildBorder(),
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),

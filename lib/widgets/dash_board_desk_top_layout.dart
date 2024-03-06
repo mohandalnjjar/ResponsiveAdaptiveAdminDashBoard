@@ -26,7 +26,7 @@ class DashBoardDeskTopLayout extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      flex: 3,
+                      flex: 4,
                       child: Padding(
                         padding: EdgeInsets.only(top: 12),
                         child: AllExpensesAndQucikInVoiceSection(),
@@ -34,6 +34,7 @@ class DashBoardDeskTopLayout extends StatelessWidget {
                     ),
                     SizedBox(width: 10),
                     Expanded(
+                      flex: 2,
                       child: TransActionHistorySection(),
                     ),
                   ],

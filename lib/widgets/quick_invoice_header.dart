@@ -9,9 +9,9 @@ class QucickInVoiceHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+         Text(
           'Qucik Invoice',
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         const Spacer(),
         Container(
